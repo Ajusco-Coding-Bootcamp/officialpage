@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f573498.chunk.css",
-    "main.js": "/static/js/main.fcf09139.chunk.js",
-    "main.js.map": "/static/js/main.fcf09139.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7c1596f7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7c1596f7.js.map",
-    "static/js/2.ab279417.chunk.js": "/static/js/2.ab279417.chunk.js",
-    "static/js/2.ab279417.chunk.js.map": "/static/js/2.ab279417.chunk.js.map",
-    "static/js/3.ec6a7b2b.chunk.js": "/static/js/3.ec6a7b2b.chunk.js",
-    "static/js/3.ec6a7b2b.chunk.js.map": "/static/js/3.ec6a7b2b.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.9f573498.chunk.css.map": "/static/css/main.9f573498.chunk.css.map",
-    "static/js/2.ab279417.chunk.js.LICENSE.txt": "/static/js/2.ab279417.chunk.js.LICENSE.txt",
-    "static/media/AJUSCO CODING BOOTCAMP.7d63dc0d.png": "/static/media/AJUSCO CODING BOOTCAMP.7d63dc0d.png",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/officialpage/static/css/main.9f573498.chunk.css",
+    "main.js": "/officialpage/static/js/main.fcf09139.chunk.js",
+    "main.js.map": "/officialpage/static/js/main.fcf09139.chunk.js.map",
+    "runtime-main.js": "/officialpage/static/js/runtime-main.13dbd831.js",
+    "runtime-main.js.map": "/officialpage/static/js/runtime-main.13dbd831.js.map",
+    "static/js/2.ab279417.chunk.js": "/officialpage/static/js/2.ab279417.chunk.js",
+    "static/js/2.ab279417.chunk.js.map": "/officialpage/static/js/2.ab279417.chunk.js.map",
+    "static/js/3.ec6a7b2b.chunk.js": "/officialpage/static/js/3.ec6a7b2b.chunk.js",
+    "static/js/3.ec6a7b2b.chunk.js.map": "/officialpage/static/js/3.ec6a7b2b.chunk.js.map",
+    "index.html": "/officialpage/index.html",
+    "static/css/main.9f573498.chunk.css.map": "/officialpage/static/css/main.9f573498.chunk.css.map",
+    "static/js/2.ab279417.chunk.js.LICENSE.txt": "/officialpage/static/js/2.ab279417.chunk.js.LICENSE.txt",
+    "static/media/AJUSCO CODING BOOTCAMP.7d63dc0d.png": "/officialpage/static/media/AJUSCO CODING BOOTCAMP.7d63dc0d.png",
+    "static/media/logo.6ce24c58.svg": "/officialpage/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c1596f7.js",
+    "static/js/runtime-main.13dbd831.js",
     "static/js/2.ab279417.chunk.js",
     "static/css/main.9f573498.chunk.css",
     "static/js/main.fcf09139.chunk.js"
