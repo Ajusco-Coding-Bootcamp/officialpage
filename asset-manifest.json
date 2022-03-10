@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/officialpage/static/css/main.9f573498.chunk.css",
+    "main.css": "/officialpage/static/css/main.a16d938d.chunk.css",
     "main.js": "/officialpage/static/js/main.fcf09139.chunk.js",
     "main.js.map": "/officialpage/static/js/main.fcf09139.chunk.js.map",
     "runtime-main.js": "/officialpage/static/js/runtime-main.13dbd831.js",
@@ -10,7 +10,7 @@
     "static/js/3.ec6a7b2b.chunk.js": "/officialpage/static/js/3.ec6a7b2b.chunk.js",
     "static/js/3.ec6a7b2b.chunk.js.map": "/officialpage/static/js/3.ec6a7b2b.chunk.js.map",
     "index.html": "/officialpage/index.html",
-    "static/css/main.9f573498.chunk.css.map": "/officialpage/static/css/main.9f573498.chunk.css.map",
+    "static/css/main.a16d938d.chunk.css.map": "/officialpage/static/css/main.a16d938d.chunk.css.map",
     "static/js/2.ab279417.chunk.js.LICENSE.txt": "/officialpage/static/js/2.ab279417.chunk.js.LICENSE.txt",
     "static/media/AJUSCO CODING BOOTCAMP.7d63dc0d.png": "/officialpage/static/media/AJUSCO CODING BOOTCAMP.7d63dc0d.png",
     "static/media/logo.6ce24c58.svg": "/officialpage/static/media/logo.6ce24c58.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.13dbd831.js",
     "static/js/2.ab279417.chunk.js",
-    "static/css/main.9f573498.chunk.css",
+    "static/css/main.a16d938d.chunk.css",
     "static/js/main.fcf09139.chunk.js"
   ]
 }
