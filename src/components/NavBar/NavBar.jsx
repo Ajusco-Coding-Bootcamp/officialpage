@@ -12,7 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import './NavBar.css'
-
+//router
+import {Link} from 'react-router-dom'
 const pages = ['Acerca de nosotros', 'Cursos', 'Comunidad', 'Galería'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -82,7 +83,8 @@ const NavBar = () => {
 
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu} >
-                  <Typography textAlign="center"><a href={'#'+ page}>{page}</a></Typography>
+                      
+                  <Typography textAlign="center"> <Link to={page}>{page}</Link></Typography>
                 </MenuItem>
               ))}
             </Menu>

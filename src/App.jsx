@@ -3,6 +3,10 @@ import logoBootcamp from './assets/AJUSCO CODING BOOTCAMP.png'
 import './App.css';
 import Home from './components/Home/home'
 import NavBar from './components/NavBar/NavBar'
+import Comunidad from './components/Comunidad/Comunidad'
+//router
+import { Route, Routes, Link } from "react-router-dom";
+
 //theme
 //import { createTheme, ThemeProvider } from '@material-ui/core'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -36,6 +40,29 @@ function App() {
       <div className="nav-bar">
       
       <NavBar />
+      <div>
+     <nav>
+         <ul id="navigation">
+             <li>
+                 <Link to="/home">Home</Link>
+             </li>
+             <li>
+                 <Link to="/comunidad">Comunidad</Link>
+             </li>
+             <li>
+                 <Link to="/contact">Contact</Link>
+             </li>
+         </ul>
+     </nav>
+</div>
+<Routes>
+    <Route exact path="/home" element= {<Home/>}>
+     
+    </Route>
+    <Route path="/comunidad" element={<Comunidad/>}>
+    
+    </Route>
+</Routes>
       </div>
       <div className="central-component-1 App-section">
         <header className="App-section" id="home">
