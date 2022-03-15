@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import logoBootcamp from './assets/AJUSCO CODING BOOTCAMP.png'
 import './App.css';
 import Home from './components/Home/home'
 import NavBar from './components/NavBar/NavBar'
 import Comunidad from './components/Comunidad/Comunidad'
+import Cursos from './components/Cursos/Cursos';
+import Galería from './components/Galería/Galería';
 //router
 import { Route, Routes, Link } from "react-router-dom";
 
@@ -38,49 +38,22 @@ function App() {
     <ThemeProvider theme={theme}>
     <div className="App">
       <div className="nav-bar">
-      
       <NavBar />
-      <div>
-     <nav>
-         <ul id="navigation">
-             <li>
-                 <Link to="/home">Home</Link>
-             </li>
-             <li>
-                 <Link to="/comunidad">Comunidad</Link>
-             </li>
-             <li>
-                 <Link to="/contact">Contact</Link>
-             </li>
-         </ul>
-     </nav>
-</div>
-<Routes>
-    <Route exact path="/home" element= {<Home/>}>
-     
-    </Route>
-    <Route path="/comunidad" element={<Comunidad/>}>
-    
-    </Route>
-</Routes>
-      </div>
       <div className="central-component-1 App-section">
-        <header className="App-section" id="home">
-        <img src={logoBootcamp} alt="logo" />
-        
-        </header>
-        <Home name={'Programming Bootcamp'}/>
-      </div>
+        <Routes>
+          <Route exact path="/Home" element= {<Home name="first comp "/>}>
+          
+          </Route>
 
-      <div className="central-component-2 App-section" id="Cursos">
-        <Home name={'Cursos'} />
+          <Route path="/Cursos" element={<Cursos/>}></Route>
+
+          <Route path="/Comunidad" element={<Comunidad/>}></Route>
+
+          <Route path="/Gallery" element={<Galería/>}></Route>
+        </Routes>
       </div>
-      <div className="central-component-3 App-section" id="Comunidad">
-        <Home name={'Comunidad'}/>
-      </div>
-      <div className="central-component-4 App-section" id="Galería">
-        <Home name={'Galería'}/>
-      </div>
+    </div>
+
       
       <div className="footer">
         Footer

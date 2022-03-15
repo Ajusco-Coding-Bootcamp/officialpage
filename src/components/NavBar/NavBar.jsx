@@ -14,27 +14,23 @@ import MenuItem from '@mui/material/MenuItem';
 import './NavBar.css'
 //router
 import {Link} from 'react-router-dom'
-const pages = ['Acerca de nosotros', 'Cursos', 'Comunidad', 'Galería'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const pages = ['Home', 'Cursos', 'Comunidad', 'Gallery'];
+
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+ 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+ 
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
     <AppBar position="static">
@@ -60,6 +56,7 @@ const NavBar = () => {
             >
               <MenuIcon />
             </IconButton>
+
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -82,11 +79,15 @@ const NavBar = () => {
                 
 
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} >
-                      
-                  <Typography textAlign="center"> <Link to={page}>{page}</Link></Typography>
-                </MenuItem>
+                    
+                  <Link to={page}> 
+                        <MenuItem key={page} onClick={handleCloseNavMenu} >
+                              <Typography textAlign="center"> {page} </Typography>
+                        </MenuItem>
+                  </Link>
+                
               ))}
+
             </Menu>
           </Box>
           <Typography
@@ -100,13 +101,15 @@ const NavBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+                  <Link to={page}>
+                        <Button
+                   key={page}
+                   onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                    {page}
+                  </Button>
+              </Link>
             ))}
           </Box>
 

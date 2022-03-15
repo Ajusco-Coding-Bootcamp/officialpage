@@ -7,9 +7,6 @@
   grid-template-areas: 
   "nav-bar nav-bar nav-bar"
   "central-component-1 central-component-1 central-component-1"
-  "central-component-2 central-component-2 central-component-2"
-  "central-component-3 central-component-3 central-component-3"
-  "central-component-4 central-component-4 central-component-4"
   "footer footer footer";
  
 }
@@ -19,15 +16,7 @@
 .central-component-1 {
   grid-area: central-component-1;
 }
-.central-component-2 {
-  grid-area: central-component-2;
-}
-.central-component-3 {
-  grid-area: central-component-3;
-}
-.central-component-4 {
-  grid-area: central-component-4;
-}
+
 .footer {
   grid-area: footer;
 }
@@ -54,8 +43,11 @@
   color: darkslategrey;
 }
 
-
-
+/* full scope changes*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* MATERIAL UI */
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
