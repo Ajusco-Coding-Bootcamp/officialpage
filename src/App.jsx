@@ -5,24 +5,26 @@ import Comunidad from './components/Comunidad/Comunidad'
 import Cursos from './components/Cursos/Cursos';
 import Galería from './components/Galería/Galería';
 //router
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 
 //theme
 //import { createTheme, ThemeProvider } from '@material-ui/core'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Button from '@material-ui/core/Button';
+
 
 //theme background: #fc00ff;  /* fallback for old browsers */
 
 
-const theme = createTheme({
+export const theme = createTheme({
   palette: {
+    //mode: 'dark',
     primary: {
       main: '#212121',
     },
     secondary: {
       main: '#76ff03',
     },
+    
     contrastThreshold: 3,
     // Used by the functions below to shift a color's luminance by approximately
     // two indexes within its tonal palette.
@@ -38,7 +40,8 @@ function App() {
     <ThemeProvider theme={theme}>
     <div className="App">
       <div className="nav-bar">
-      <NavBar />
+        <NavBar />
+      </div>
       <div className="central-component-1 App-section">
         <Routes>
           <Route exact path="/Home" element= {<Home name="first comp "/>}>
@@ -52,7 +55,7 @@ function App() {
           <Route path="/Gallery" element={<Galería/>}></Route>
         </Routes>
       </div>
-    </div>
+    
 
       
       <div className="footer">
