@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar'
 import Comunidad from './components/Comunidad/Comunidad'
 import Cursos from './components/Cursos/Cursos';
 import Galería from './components/Galería/Galería';
+import Footer from './components/Footer/Footer'
 //router
 import { Route, Routes} from "react-router-dom";
 
@@ -55,11 +56,8 @@ function App() {
           <Route path="/Gallery" element={<Galería/>}></Route>
         </Routes>
       </div>
-    
-
-      
       <div className="footer">
-        Footer
+        <Footer/>
       </div>
     </div>
     </ThemeProvider>
